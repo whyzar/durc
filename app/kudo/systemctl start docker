@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sat 2020-12-26 22:11:15 EST; 2min 7s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 46713 (dockerd)
+      Tasks: 11
+     Memory: 54.0M
+     CGroup: /system.slice/docker.service
+             └─46713 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Dec 26 22:11:02 rebo dockerd[46713]: time="2020-12-26T22:11:02.959366168-05:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Dec 26 22:11:02 rebo dockerd[46713]: time="2020-12-26T22:11:02.959380298-05:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Dec 26 22:11:02 rebo dockerd[46713]: time="2020-12-26T22:11:02.959391011-05:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Dec 26 22:11:02 rebo dockerd[46713]: time="2020-12-26T22:11:02.959667329-05:00" level=info msg="Loading containers: start."
+Dec 26 22:11:07 rebo dockerd[46713]: time="2020-12-26T22:11:07.207580860-05:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Dec 26 22:11:10 rebo dockerd[46713]: time="2020-12-26T22:11:10.184534756-05:00" level=info msg="Loading containers: done."
+Dec 26 22:11:15 rebo dockerd[46713]: time="2020-12-26T22:11:15.169875677-05:00" level=info msg="Docker daemon" commit=f001486 graphdriver(s)=overlay2 version=20.10.1
+Dec 26 22:11:15 rebo dockerd[46713]: time="2020-12-26T22:11:15.202282469-05:00" level=info msg="Daemon has completed initialization"
+Dec 26 22:11:15 rebo systemd[1]: Started Docker Application Container Engine.
+Dec 26 22:11:15 rebo dockerd[46713]: time="2020-12-26T22:11:15.978716216-05:00" level=info msg="API listen on /run/docker.sock"
